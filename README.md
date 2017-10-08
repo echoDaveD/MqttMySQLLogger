@@ -89,7 +89,7 @@ select * from MqttMySQLLogger.Message where msgtopic = "YOUR/TOPIC" order by msg
 ```
 
 
-## Autostart on Ubuntu 16.04 LTS
+## Autostart on Ubuntu 
 
 To start this script on login with your User just do the following steps
 
