@@ -20,8 +20,9 @@ CREATE TABLE CREATE TABLE MqttMySQLLogger.Message
 
 ## System Requirements
 
-You need Python and pip on your computer.
-```python
+You need MySQL-Server, Python and pip on your computer.
+```command
+apt-get install mysql-server mysql-client
 apt-get install -y python-pip python-dev build-essential libffi-dev libssl-dev
 ```
 
