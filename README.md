@@ -3,18 +3,18 @@ MqttMySQLLogger is an Pythen Script which listen to an Mqtt Topic and write any 
 
 On the initial run, MqttMySQLLogger will creating following MySQL objects.
 
-```python
+```sql
 CREATE DATABASE MqttMySQLLogger
 ```
 
 It's the database where the tables will be stored.
 
-```python
+```sql
 CREATE TABLE CREATE TABLE MqttMySQLLogger.Topic
 ```
 It's the table where any topic will be stored once.
 
-```python
+```sql
 CREATE TABLE CREATE TABLE MqttMySQLLogger.Message
 ```
 It's the table where any message to an Topic will be stored with the current timestamp.
