@@ -25,7 +25,7 @@ def on_connect(client, userdata, flags, rc):
        log("[ERROR] MQTT Connection Error: " + str(rc)) 
        sys.exit()
     else: 
-       client.subscribe(config.get('mqtt', 'mqtt_topic'))
+       client.subscribe(str(config.get('mqtt', 'mqtt_topic')))
 
 # on new MQTT Message
 def on_message(client, userdata, msg):
