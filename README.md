@@ -98,7 +98,6 @@ To start this script on login with your User just do the following steps
 * Then type Startup Applications and open that app.
 * Here Click the Add Button on the right.
 * There fill in the details and in the command area browse for your Python File and click Ok.
-* Test it by Restarting System . Done . Enjoy !!
 
 you can also start it with an cron or run it es a service.
 
