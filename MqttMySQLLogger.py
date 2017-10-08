@@ -25,7 +25,7 @@ def on_connect(client, userdata, flags, rc):
        log("[ERROR] MQTT Connection Error: " + str(rc)) 
        sys.exit()
     else: 
-       client.subscribe("#")
+       client.subscribe(config.get('mqtt', 'mqtt_topic'))
 
 # on new MQTT Message
 def on_message(client, userdata, msg):
@@ -122,6 +122,6 @@ mySQLCon.close()
 client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
-client.connect(config.get('mqtt', 'client_host'), config.get('mqtt', 'client_port'), 60)
+client.connect(config.get('mqtt', 'mqtt_host'), config.get('mqtt', 'mqtt_port'), 60)
 client.loop_forever()
 
